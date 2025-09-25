@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Translate</title>
+    <link rel="sohrtcut icon" href="trnslt.png">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Translate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#card">Card</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-3">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image copy 2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image copy.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="image copy 4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="image copy 3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="n" class="card-title">murad</h5>
+                        <p class="card-text">Cavab buradadir !!!!!</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="image copy 5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Translate</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quam. Magnam
+                            ipsam officiis quia. Facere velit ex dolore alias ipsa quis minima, odio distinctio omnis!
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let netice2 = document.getElementById('n')
+        let sual = prompt('Soz daxil edin.')
+        let tercume = 'murad'
+        let netice = tercume == 'salam' ? 'Hello'
+            : tercume == 'sagol' ? 'good bye'
+                : tercume == 'dost' ? 'friend '
+                    : tercume == 'yemek' ? 'food'
+                        : tercume == 'konfet' ? 'candy'
+                            : tercume == 'aglamak' ? 'cry'
+                                : tercume == 'cagir' ? 'call'
+                                    : 'ele birsey yoxdu:)'
+        netice2.innerHTML = netice
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
