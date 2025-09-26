@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Translate</title>
-    <link rel="sohrtcut icon" href="trnslt.png">
+    <link rel="shortcut icon" href="trnslt.png">
 </head>
 
 <body>
@@ -103,15 +103,15 @@
     <script>
         let netice2 = document.getElementById('n')
         let sual = prompt('Soz daxil edin.')
-        let tercume = 'murad'
+        let tercume = sual
+
         let netice = tercume == 'salam' ? 'Hello'
-            : tercume == 'sagol' ? 'good bye'
-                : tercume == 'dost' ? 'friend '
-                    : tercume == 'yemek' ? 'food'
-                        : tercume == 'konfet' ? 'candy'
-                            : tercume == 'aglamak' ? 'cry'
-                                : tercume == 'cagir' ? 'call'
-                                    : 'ele birsey yoxdu:)'
+            : tercume == 'sagol' ? 'Good bye'
+            : tercume == 'dost' ? 'Friend'
+            : tercume == 'yemek' ? 'Food'
+            : tercume == 'konfet' ? 'Candy'
+            : 'ele birsey yoxdu:)'
+
         netice2.innerHTML = netice
     </script>
 
